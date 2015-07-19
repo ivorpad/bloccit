@@ -5,3 +5,25 @@
 // h1 {
 // 	color: red;
 // }
+
+.social-btn {
+	background-color: #2DADC5;
+  padding: 10px 12px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 3px;
+  color: white;
+  text-shadow: 0px -1px 1px rgba(0,0,0,.2);
+	transition: all 200ms linear;
+
+   &:hover {
+   	text-decoration: none;
+   	background: #40CDE7;
+   	color: white;
+   }
+
+   &:focus {
+   	background-color: #2DADC5;
+   	color: white;
+   }
+}
