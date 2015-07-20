@@ -1,0 +1,176 @@
+commit cffc8ee6586f2becb052c0f32d1a1857a0ae338d
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 20:45:23 2015 -0430
+
+    Revert "Assignment 30 - Added Question and Answer models"
+    
+    This reverts commit 2456f476ed087e71c1e7d98de7bface44ae0ab92.
+
+D	app/models/answer.rb
+D	app/models/question.rb
+D	db/migrate/20150719230538_create_questions.rb
+D	db/migrate/20150719230548_create_answers.rb
+
+commit e4cc5fbab2c0d55befe2c5d875c6cb0b367d9589
+Merge: 4b635a0 2456f47
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 20:40:14 2015 -0430
+
+    Merge branch 'assignment-30-models'
+
+commit 4b635a0cbb2b5e37794a1c903164108e501750d9
+Merge: 07a4afe 4c7ebf6
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 20:34:39 2015 -0430
+
+    Merge branch 'master' of https://github.com/ivorpad/bloccit
+
+commit 07a4afe6fb236e575941bcbbdbb91bd6ea380462
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 20:33:34 2015 -0430
+
+    modified some files
+
+A	app/models/.keep
+D	app/models/comment.rb
+D	app/models/post.rb
+D	db/migrate/20150719204802_create_posts.rb
+D	db/migrate/20150719211713_create_comments.rb
+D	db/schema.rb
+
+commit d9d9233582c37167627fe98404f22fae95858153
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 20:30:39 2015 -0430
+
+    modified about.html.erb
+
+M	app/views/welcome/about.html.erb
+
+commit 4c7ebf6aa99f3db95fda1ca0820c9438d62681cd
+Merge: 292924a 8253dbd
+Author: Ivor Padilla <ivorpad@users.noreply.github.com>
+Date:   Sun Jul 19 18:37:54 2015 -0430
+
+    Merge pull request #3 from ivorpad/checkpoint-30-models
+    
+    Finished checkpoint 30
+
+commit 2456f476ed087e71c1e7d98de7bface44ae0ab92
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 18:37:00 2015 -0430
+
+    Assignment 30 - Added Question and Answer models
+
+A	app/models/answer.rb
+A	app/models/question.rb
+A	db/migrate/20150719230538_create_questions.rb
+A	db/migrate/20150719230548_create_answers.rb
+
+commit 8253dbd6cab3277d6c88bc5b6da53dce95e8102b
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 18:26:40 2015 -0430
+
+    Finished checkpoint 30
+
+D	app/models/.keep
+A	app/models/comment.rb
+A	app/models/post.rb
+A	db/migrate/20150719204802_create_posts.rb
+A	db/migrate/20150719211713_create_comments.rb
+A	db/schema.rb
+
+commit 292924aba34b7e92a27649a4d783e46e7fa65eaa
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sun Jul 19 13:11:56 2015 -0430
+
+    Finished checkpoint 29
+
+M	Gemfile
+M	Gemfile.lock
+M	app/assets/javascripts/application.js
+D	app/assets/stylesheets/application.css
+A	app/assets/stylesheets/application.scss
+M	app/assets/stylesheets/welcome.scss
+M	app/views/layouts/application.html.erb
+
+commit 0212fdbd98c67dc657f00e1eacbebb9d76a524ce
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sat Jul 18 16:11:56 2015 -0430
+
+    Finished checkpoint 28
+
+M	app/views/layouts/application.html.erb
+M	app/views/welcome/about.html.erb
+A	app/views/welcome/contact.html.erb
+M	app/views/welcome/index.html.erb
+
+commit e17c86b713f3158a38d4bac59ad9ee0cd5a8debe
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Sat Jul 18 14:36:19 2015 -0430
+
+    Added Welcome Controller and two sample views
+
+A	app/assets/javascripts/welcome.coffee
+A	app/assets/stylesheets/welcome.scss
+A	app/controllers/welcome_controller.rb
+A	app/helpers/welcome_helper.rb
+A	app/views/welcome/about.html.erb
+A	app/views/welcome/index.html.erb
+M	config/routes.rb
+
+commit 661ba1daad2363ea8ce79f230a276156a0d2b470
+Author: Ivor Padilla <ivorjpc@gmail.com>
+Date:   Fri Jul 17 21:31:07 2015 -0430
+
+    First commit and README update
+
+A	.gitignore
+A	Gemfile
+A	Gemfile.lock
+A	README.md
+A	Rakefile
+A	app/assets/images/.keep
+A	app/assets/javascripts/application.js
+A	app/assets/stylesheets/application.css
+A	app/controllers/application_controller.rb
+A	app/controllers/concerns/.keep
+A	app/helpers/application_helper.rb
+A	app/mailers/.keep
+A	app/models/.keep
+A	app/models/concerns/.keep
+A	app/views/layouts/application.html.erb
+A	bin/bundle
+A	bin/rails
+A	bin/rake
+A	bin/setup
+A	bin/spring
+A	config.ru
+A	config/application.rb
+A	config/boot.rb
+A	config/database.yml
+A	config/environment.rb
+A	config/environments/development.rb
+A	config/environments/production.rb
+A	config/environments/test.rb
+A	config/initializers/assets.rb
+A	config/initializers/backtrace_silencers.rb
+A	config/initializers/cookies_serializer.rb
+A	config/initializers/filter_parameter_logging.rb
+A	config/initializers/inflections.rb
+A	config/initializers/mime_types.rb
+A	config/initializers/session_store.rb
+A	config/initializers/wrap_parameters.rb
+A	config/locales/en.yml
+A	config/routes.rb
+A	config/secrets.yml
+A	db/seeds.rb
+A	lib/assets/.keep
+A	lib/tasks/.keep
+A	log/.keep
+A	public/404.html
+A	public/422.html
+A	public/500.html
+A	public/favicon.ico
+A	public/robots.txt
+A	vendor/assets/javascripts/.keep
+A	vendor/assets/stylesheets/.keep
