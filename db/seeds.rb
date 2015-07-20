@@ -24,6 +24,24 @@ posts = Post.all
   )
 end
 
+# Assignment 32
+
+posts_seeded = [
+  { title: "Sample 1", body: "Sample 1 body" }
+]
+
+posts_seeded.each do |seeded|
+  Post.where(seeded).first_or_create
+end
+
+comments_seeded = [
+  { title: "Comment Sample 1", body: "Comment Sample 1 body" }
+]
+
+posts_seeded.each do |c_seeded|
+  Post.where(c_seeded).first_or_create
+end
+
 puts "Seeds finished"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
