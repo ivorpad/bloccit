@@ -1,0 +1,16 @@
+<h1>Create a new question</h1>
+
+<%= form_for @question do |q| %>
+
+<%= q.label :title %>
+<%= q.text_field :title %>
+
+<%= q.label :body %>
+<%= q.text_area :body %>
+
+<%= q.label :resolved %>
+<%= q.check_box :resolved %>
+
+<%= q.submit "Save" %>
+
+<% end %>

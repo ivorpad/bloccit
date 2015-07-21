@@ -1,0 +1,16 @@
+<h1> <%= @question.title %> </h1>
+
+<%= link_to "Edit", edit_question_path(@question) %>
+
+<p>
+  <%= @question.body %>
+</p>
+
+<p>
+  Resolved?:
+    <% if @question.resolved %>
+      Yes, the user marked the question as <b>Resolved</b>
+    <% else %>
+      No, the user marked the question as <b>Not Resolved</b>
+    <% end %>
+</p>
