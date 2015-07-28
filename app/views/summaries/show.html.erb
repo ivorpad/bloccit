@@ -1,2 +1,6 @@
-<h1>Summaries#show</h1>
-<p>Find me in app/views/summaries/show.html.erb</p>
+<% if @post.summary %>
+  <h3>Post Summary</h3>
+  <small> <%= @post.summary.body %> </small>
+  <% else %>
+  <p> Post summary was not found, please create one: </p> <%= link_to "Create Summary", new_topic_post_summary_path %>
+<% end %>

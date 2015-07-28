@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :topics do
     resources :posts, except: [:index] do
-      resources :summaries, only: [:new, :create, :show]
+      resource :summary
     end
   end
 
