@@ -24,7 +24,7 @@
 
      <div class="form-group">
        <h3> <small>Write a short summary for your post:</small> </h3>
-       <%= f.fields_for @summary do |b| %>
+       <%= f.fields_for :summary, @summary do |b| %>
          <%= b.label :summary %>
          <%= b.text_area :body, class: 'form-control', placeholder: "Enter summary of post:" %>
        <% end %>
