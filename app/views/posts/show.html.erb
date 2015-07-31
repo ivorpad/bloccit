@@ -2,14 +2,23 @@
 
 <div class="row">
   <div class="col-md-8">
+<<<<<<< HEAD
     <small>
+=======
+    <small class="post-meta">
+>>>>>>> assignment-44-uploading-images
       <%= image_tag @post.user.avatar.url(:tiny) if @post.user.avatar? %>
       submitted
       <%= time_ago_in_words(@post.created_at) %>
       ago by
       <%= @post.user.name %>
     </small>
+<<<<<<< HEAD
     <p><%= @post.markdown_body %></p>
+=======
+      <%= image_tag(@post.image.post.url, class: 'thumbnail post-image') if @post.image? %>
+      <p><%= @post.markdown_body %></p>
+>>>>>>> assignment-44-uploading-images
   </div>
   <div class="col-md-4">
     <% if policy(@post).edit? %>

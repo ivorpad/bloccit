@@ -14,7 +14,13 @@
     <% @posts.each do |post| %>
     <div class="media">
       <div class="media-body">
+<<<<<<< HEAD
         <h4 class="media-heading">
+=======
+          <%= image_tag(post.image.tiny.url, class: 'thumbnail topic-image') if post.image? %>
+        <h4 class="media-heading">
+
+>>>>>>> assignment-44-uploading-images
           <%= link_to post.title, [@topic, post] %>
         </h4>
         <small>

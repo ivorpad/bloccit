@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150729234723) do
+=======
+ActiveRecord::Schema.define(version: 20150731012150) do
+>>>>>>> assignment-44-uploading-images
 
   create_table "advertisements", force: :cascade do |t|
     t.string   "title"
@@ -47,6 +51,10 @@ ActiveRecord::Schema.define(version: 20150729234723) do
     t.integer  "user_id"
     t.integer  "topic_id"
     t.integer  "summary_id"
+<<<<<<< HEAD
+=======
+    t.string   "image"
+>>>>>>> assignment-44-uploading-images
   end
 
   add_index "posts", ["summary_id"], name: "index_posts_on_summary_id"

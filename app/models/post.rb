@@ -3,6 +3,11 @@ class Post < ActiveRecord::Base
   belongs_to :user
   belongs_to :topic
 
+<<<<<<< HEAD
+=======
+  mount_uploader :image, ImageUploader
+
+>>>>>>> assignment-44-uploading-images
   default_scope { order('created_at DESC') }
 
   validates :title, length: { minimum: 5 }, presence: true
