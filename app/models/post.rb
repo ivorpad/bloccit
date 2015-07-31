@@ -4,6 +4,11 @@ class Post < ActiveRecord::Base
   belongs_to :topic
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  mount_uploader :image, ImageUploader
+
+>>>>>>> assignment-44-uploading-images
 =======
   mount_uploader :image, ImageUploader
 

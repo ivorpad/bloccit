@@ -19,6 +19,9 @@
 # Ignore application configuration
 config/application.yml
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> assignment-44-uploading-images
 # CarrierWave image
 public/uploads
