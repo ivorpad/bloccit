@@ -21,6 +21,3 @@
 
 # CarrierWave image
 public/uploads
-
-# Fog Initializers
-/config/initializers/fog.rb
