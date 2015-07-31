@@ -49,7 +49,6 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :body, :image)
->>>>>>> assignment-44-uploading-images
   end
 
 end
