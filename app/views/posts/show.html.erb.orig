@@ -2,6 +2,15 @@
 
 <div class="row">
   <div class="col-md-8">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <small>
+=======
+    <small class="post-meta">
+>>>>>>> assignment-44-uploading-images
+=======
     <small class="post-meta">
 >>>>>>> assignment-44-uploading-images
 =======
@@ -19,7 +28,12 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <p><%= @post.markdown_body %></p>
+=======
+      <%= image_tag(@post.image.post.url, class: 'thumbnail post-image') if @post.image? %>
+      <p><%= @post.markdown_body %></p>
+>>>>>>> assignment-44-uploading-images
 =======
       <%= image_tag(@post.image.post.url, class: 'thumbnail post-image') if @post.image? %>
       <p><%= @post.markdown_body %></p>

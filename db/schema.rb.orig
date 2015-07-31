@@ -11,9 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
 ActiveRecord::Schema.define(version: 20150731012150) do
 
 
+=======
+ActiveRecord::Schema.define(version: 20150731012150) do
+
+>>>>>>> assignment-44-uploading-images
 =======
 ActiveRecord::Schema.define(version: 20150731012150) do
 
@@ -54,7 +61,10 @@ ActiveRecord::Schema.define(version: 20150731012150) do
     t.integer  "summary_id"
     t.string   "image"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> assignment-44-uploading-images
 =======
 >>>>>>> assignment-44-uploading-images
   end
