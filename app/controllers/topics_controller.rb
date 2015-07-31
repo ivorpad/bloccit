@@ -23,7 +23,11 @@ class TopicsController < ApplicationController
   def create
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     @topic = Topic.new(params.require(:topic).permit(:name, :description, :public))
+=======
+    @topic = Topic.new(params.topic_params)
+>>>>>>> assignment-44-uploading-images
 =======
     @topic = Topic.new(params.topic_params)
 >>>>>>> assignment-44-uploading-images
@@ -44,7 +48,11 @@ class TopicsController < ApplicationController
      authorize @topic
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
      if @topic.update_attributes(params.require(:topic).permit(:name, :description, :public))
+=======
+     if @topic.update_attributes(params.topic_params)
+>>>>>>> assignment-44-uploading-images
 =======
      if @topic.update_attributes(params.topic_params)
 >>>>>>> assignment-44-uploading-images
@@ -60,7 +68,10 @@ class TopicsController < ApplicationController
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> assignment-44-uploading-images
 =======
 >>>>>>> assignment-44-uploading-images
    def topic_params
@@ -68,6 +79,9 @@ class TopicsController < ApplicationController
    end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> assignment-44-uploading-images
+=======
 >>>>>>> assignment-44-uploading-images
 =======
 >>>>>>> assignment-44-uploading-images
