@@ -3,14 +3,31 @@
 <div class="row">
   <div class="col-md-8">
     <small class="post-meta">
+
       <%= image_tag @post.user.avatar.url(:tiny) if @post.user.avatar? %>
       submitted
       <%= time_ago_in_words(@post.created_at) %>
       ago by
       <%= @post.user.name %>
     </small>
-      <%= image_tag(@post.image.post.url, class: 'thumbnail post-image') if @post.image? %>
-      <p><%= @post.markdown_body %></p>
+    <%= image_tag(@post.image.post.url, class: 'thumbnail post-image') if @post.image? %>
+    <p><%= @post.markdown_body %></p>
+
+    <h3>
+      <%= @comments.count %>
+      Comments</h3>
+    <ol>
+      <% @comments.each do |comment| %>
+      <li><%= render comment %></li>
+      <% end %>
+    </ol>
+
+    <% if policy(@comment).create? %>
+        <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+    <% end %>
+
+
+
   </div>
   <div class="col-md-4">
     <% if policy(@post).edit? %>
