@@ -13,6 +13,7 @@
     </p>
     <% @posts.each do |post| %>
     <div class="media">
+        <%= render partial: 'votes/voter', locals: { post: post } %>
       <div class="media-body">
         <%= image_tag(post.image.tiny.url, class: 'thumbnail topic-image') if post.image? %>
         <h4 class="media-heading">
