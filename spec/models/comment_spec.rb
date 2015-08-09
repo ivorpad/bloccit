@@ -17,7 +17,7 @@ describe Comment do
       allow(FavoriteMailer)
         .to receive(:new_comment)
         .with(@user, @post, @comment)
-        .and_run(double(deliver_now: true))
+        .and_return(double(deliver_now: true))
 
       expect(FavoriteMailer)
         .to receive(:new_comment)

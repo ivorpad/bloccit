@@ -7,15 +7,18 @@
     describe "#favorited(post)" do
 
       before do
-        # add common objects
+        @user = authenticated_user
+        @post = associated_post
       end
 
-      xit "returns `nil` if the user has not favorited the post" do
-
+      it "returns `nil` if the user has not favorited the post" do
+        expect(@user.favorited(@post)).to be_nil
       end
 
-      xit "returns the appropiate favorite if it exists" do
-
+      it "returns the appropiate favorite if it exists" do
+          favorite = @user.favorites.create(post: @post)
+          #expect(@user.favorited(@post)).to_not be_nil
+          expect(@user.favorited(@post)).to eq(favorite)
       end
     end
   end
