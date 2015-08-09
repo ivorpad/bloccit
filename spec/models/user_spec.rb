@@ -5,6 +5,11 @@
     include TestFactories
 
     describe "#favorited(post)" do
+
+      before do
+        # add common objects
+      end
+
       xit "returns `nil` if the user has not favorited the post" do
 
       end
