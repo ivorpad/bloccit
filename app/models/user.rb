@@ -23,4 +23,8 @@ class User < ActiveRecord::Base
     role == 'moderator'
   end
 
+  def voted(post)
+    
+  end
+
 end
