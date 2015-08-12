@@ -30,7 +30,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rspec-rails', '~> 3.0'
-  gem 'capybara', '~> 2.2.0'
+  gem 'capybara', github: 'jnicklas/capybara', branch: 'master'
   gem 'awesome_print'
 end
 

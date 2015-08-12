@@ -4,7 +4,7 @@ class Comment < ActiveRecord::Base
   default_scope { order('created_at DESC') }
 
   after_create :send_favorite_emails
-
+  
   private
 
   def send_favorite_emails
