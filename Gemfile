@@ -33,6 +33,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara', github: 'jnicklas/capybara', branch: 'master'
   gem 'awesome_print'
+  gem 'puma'
 end
 
 group :production do
