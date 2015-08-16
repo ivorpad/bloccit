@@ -34,6 +34,7 @@ group :development, :test do
   gem 'capybara', github: 'jnicklas/capybara', branch: 'master'
   gem 'awesome_print'
   gem 'puma'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 group :production do
