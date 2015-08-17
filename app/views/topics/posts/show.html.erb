@@ -15,15 +15,15 @@
     <%= image_tag(@post.image.post.url, class: 'thumbnail post-image') if @post.image? %>
     <p><%= @post.markdown_body %></p>
 
-    <h3>
-      <%= @comments.count %>
-      Comments</h3>
-    <ol>
-      <li><%= render partial: 'comments/comment', collection: @comments %></li>
-    </ol>
+    <h3> <%= @comments.count %> Comments</h3>
+    <div class="js-comments">
+      <%= render partial: 'comments/comment', collection: @comments %>
+    </div>
 
     <% if policy(@comment).create? %>
-    <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+    <div class='new-comment'>
+      <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
+    </div>
     <% end %>
 
   </div>
