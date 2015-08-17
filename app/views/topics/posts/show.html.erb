@@ -19,9 +19,7 @@
       <%= @comments.count %>
       Comments</h3>
     <ol>
-
       <li><%= render partial: 'comments/comment', collection: @comments %></li>
-    
     </ol>
 
     <% if policy(@comment).create? %>
